@@ -1,0 +1,40 @@
+{
+  "name": "vattenbagarna-backend",
+  "version": "1.0.0",
+  "description": "Backend system for vattenbagarna",
+  "main": "index.js",
+  "scripts": {
+    "test": "./testing/tests.sh",
+    "lint-hook": "./testing/auto_lint.sh",
+    "lint": "./node_modules/.bin/eslint ./",
+    "lint-fix": "./node_modules/.bin/eslint --fix ./"
+  },
+  "precommit.silent": false,
+  "precommit.colors": true,
+  "pre-commit": [
+    "lint-hook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vattenbagarna/Backend.git"
+  },
+  "author": "Vattenbagarna",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vattenbagarna/Backend/issues"
+  },
+  "homepage": "https://github.com/vattenbagarna/Backend#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "body-parser": "^1.18.3",
+    "eslint": "^5.14.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.13",
+    "nodemailer": "^6.0.0",
+    "prompts": "^2.1.0"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
