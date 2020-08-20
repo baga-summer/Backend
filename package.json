@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/vattenbagarna/Backend#readme",
   "dependencies": {
-    "bcrypt": "^3.0.5",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "eslint": "^5.14.1",
     "express": "^4.16.4",
